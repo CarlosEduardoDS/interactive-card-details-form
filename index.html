@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+  <main>
+
+    <section id="cardPreview">
+
+      <div id="frontView">
+        <div id="cardLogo">
+          <img src="images/card-logo.svg" alt="card-logo">
+        </div>
+        <span id="cardNumber">
+          0000 0000 0000 0000
+        </span>
+        <div id="nameDate">
+          <span id="cardholderName">
+            Jane Appleseed
+          </span>
+          <p>
+            <span id="expDateMonth">
+              00
+            </span>
+            /
+            <span id="expDateYear">
+              00
+            </span>
+        </div>
+        </p>
+      </div>
+      <div id="backView">
+        <span id="cvc">000</span>
+      </div>
+
+    </section>
+
+    <section id="cardForm">
+
+      <div class="caixaInput">
+        <h4>Cardholder Name</h4>
+        <input type="text" maxlength="16" placeholder="Ex. Jane Appleseed" id="inputName">
+      </div>
+
+      <div class="caixaInput">
+        <h4>Card Number</h4>
+        <input type="text" maxlength="16" placeholder="Ex. 1234 5678 9123 0000" id="inputCardNumber">
+      </div>
+
+      <div id="dateCvc" class="caixaInput">
+        <div>
+          <h4>Exp. Date (MM/YY)</h4>
+          <div>
+            <input type="number" placeholder="MM" id="inputMonth">
+            <input type="number" placeholder="YY" id="inputYear">
+          </div>
+        </div>
+
+        <div>
+          <h4>CVC</h4>
+          <input type="number" placeholder="Ex. 123" id="inputCvc">
+        </div>
+      </div>
+
+      <button id="btnConfirm">
+        Confirm
+      </button>
+    </section>
+
+    <section id="cardCompleted">
+
+      <img src="images/icon-complete.svg" alt="icon-complete">
+      <h4>Thank you!</h4>
+      <p>We've added your card details</p>
+      <button id="btnConfirmSecondPage">
+        Confirm
+      </button>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
